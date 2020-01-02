@@ -22,6 +22,7 @@ public class priceApp {
         lemonadeStand.increasePrice(1.5);
         System.out.println(lemonadeStand.price);
 
+
     }
 
 }

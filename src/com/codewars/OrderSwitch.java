@@ -44,8 +44,12 @@ public class OrderSwitch {
         // do not alter the main method!
         OrderSwitch book = new OrderSwitch(true, 9.99, "Express");
         OrderSwitch chemistrySet = new OrderSwitch(false, 72.50, "Regular");
-
         book.ship();
         chemistrySet.ship();
+        OrderSwitch My = new OrderSwitch(false, 150.00, "Regular");
+        OrderSwitch My2 = new OrderSwitch(true, 10.00, "Express");
+        System.out.println(My2.calculateShipping());
+        My.ship();
+        My2.ship();
     }
 }
