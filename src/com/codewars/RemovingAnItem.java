@@ -2,7 +2,7 @@ package com.codewars;
 
 import java.util.ArrayList;
 
-class ChangingAValue {
+class RemovingAnItem {
 
     public static void main(String[] args) {
 
@@ -24,17 +24,19 @@ class ChangingAValue {
         poirotsToDos.add("trim mustache");
         poirotsToDos.add("call all suspects together");
         poirotsToDos.add("reveal the truth of the crime");
-        System.out.println("Sherlock's to-do list before changes:");
-        System.out.println(sherlocksToDos.toString() + "\n");
-        System.out.println("Poirot's to-do list before changes:");
-        System.out.println(poirotsToDos.toString());
-        // Set each to-do below:
-        sherlocksToDos.set(1, "listen to Dr. Watson for amusement");
-        poirotsToDos.set(3, "listen to Captain Hastings for amusement");
-        System.out.println("Sherlock's to-do list after:");
-        System.out.println(sherlocksToDos.toString() + "\n");
-        System.out.println("Poirot's to-do list after:");
-        System.out.println(poirotsToDos.toString());
+
+
+        System.out.println("Before " + sherlocksToDos.toString() + "\n");
+        System.out.println("Before " + poirotsToDos.toString() + "\n");
+
+        // Remove each to-do below:
+        sherlocksToDos.remove("visit the crime scene");
+        poirotsToDos.remove("visit the crime scene");
+        sherlocksToDos.remove("play violin");
+
+
+        System.out.println("After " + sherlocksToDos.toString() + "\n");
+        System.out.println("After " + poirotsToDos.toString()+ "\n");
     }
 
 }
