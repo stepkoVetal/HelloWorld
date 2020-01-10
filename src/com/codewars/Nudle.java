@@ -1,0 +1,36 @@
+package com.codewars;
+
+public class Nudle {
+
+    double lengthInCentimeters;
+    double widthInCentimeters;
+    String shape;
+    String ingredients;
+    String texture = "brittle";
+
+    Nudle(double lenInCent, double wthInCent, String shp, String ingr) {
+
+        this.lengthInCentimeters = lenInCent;
+        this.widthInCentimeters = wthInCent;
+        this.shape = shp;
+        this.ingredients = ingr;
+
+    }
+
+    public void cook() {
+
+        this.texture = "cooked";
+
+    }
+
+    public static void main(String[] args) {
+        Pho phoChay = new Pho();
+        System.out.println(phoChay.lengthInCentimeters);
+        System.out.println(phoChay.widthInCentimeters);
+        System.out.println(phoChay.shape);
+        System.out.println(phoChay.ingredients);
+
+
+    }
+
+}
